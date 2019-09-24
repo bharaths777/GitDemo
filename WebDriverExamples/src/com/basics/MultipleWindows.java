@@ -24,7 +24,8 @@ public class MultipleWindows {
 		int links = driver.findElements(By.tagName("a")).size();
 		System.out.println(links);
 		
-		
+		System.out.println("for loop started");
+		System.out.println("code added here ");
 		for (int i = 0 ; i <links ; i++){
 			String click = Keys.chord(Keys.CONTROL, Keys.ENTER);
 			driver.findElements(By.tagName("a")).get(i).sendKeys(click);
